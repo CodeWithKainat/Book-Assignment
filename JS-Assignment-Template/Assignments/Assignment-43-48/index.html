@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .image {
+          width: 200px;
+          height: auto;
+          cursor: pointer;
+        }
+      </style>
+
+</head>
+<body>
+    <h1>Assignment 43-48</h1>
+  <!-- for task 1     >>>>>>..>..... -->
+
+    <a href="#" onclick="showAlert()">Click Me</a>
+    <br>
+
+<!-- task................>2 -->
+<img src="image1.jpg" class="image" onclick="showAlert('Image 1 clicked!')">
+<img src="image2.jpg" class="image" onclick="showAlert('Image 2 clicked!')">
+<img src="image3.jpg" class="image" onclick="showAlert('Image 3 clicked!')">
+<!-- task  3.....................> -->
+
+<table id="studentTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Grade</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>20</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+
+      <tr>
+        <td>james</td>
+        <td>40</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+      <tr>
+        <td>sara</td>
+        <td>20</td>
+        <td>10</td>
+        <td><button onclick="deleteRow(this)">Delete</button></td>
+      </tr>
+   
+
+      <!-- task 4-----------------> 
+      <h2>change img on click</h2>
+      
+      <img id="myImage" src="nature.jpg" onmouseover="changeImage('new_nature.jpg')" onmouseout="changeImage('nature.jpg')">
+
+     <!-- task 5 ------------------------ -->
+
+
+     <h1 id="counterValue">0</h1>
+     <button onclick="increaseCounter()">Increase</button>
+     <button onclick="decreaseCounter()">Decrease</button>
+
+
+
+
+
+
+    </tbody>
+  </table>
+
+
+
+
+
+
+
+
+
+
+    <script src="./app43-48.js">
+    </script>
+</body>
+</html>
